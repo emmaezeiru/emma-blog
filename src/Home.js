@@ -9,6 +9,8 @@ const Home = () => {
       { title: 'what workout will i do', body: 'reps of bench, pullups and sit ups', author: 'saint', id: 3 }
     ]);
 
+    const [house, setHouse] = useState('bungalow')
+
     const handleDelete = (id) => {
       const newBlogs = blogs.filter((blog)=> blog.id !== id);
       setBlog(newBlogs);
@@ -17,6 +19,8 @@ const Home = () => {
   return (
     <div className="home">
       <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete}/>
+      <button onClick={()=> setHouse('duplex')} >Change house</button>
+      <p>{ house }</p>
     </div>
   )
 }
