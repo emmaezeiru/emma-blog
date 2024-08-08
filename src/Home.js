@@ -9,10 +9,14 @@ const Home = () => {
       { title: 'what workout will i do', body: 'reps of bench, pullups and sit ups', author: 'saint', id: 3 }
     ]);
 
+    const handleDelete = (id) => {
+      const newBlogs = blogs.filter((blog)=> blog.id !== id);
+      setBlog(newBlogs);
+    }
 
   return (
     <div className="home">
-      <BlogList blogs={blogs} title="All Blogs"/>
+      <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete}/>
     </div>
   )
 }
