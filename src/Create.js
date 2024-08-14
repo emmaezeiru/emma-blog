@@ -1,15 +1,33 @@
 import { useState } from "react";
+import { useHistory } from 'react-router-dom';
 
 const Create = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('emma');
+    const [isLoading, setIsLoading] = useState(false);
+    const history = useHistory();
+
 
     const handleSubmit = (e) => {
-        
+        e.preventDefault();
+        const blog = {title, body, author};
+
+        setIsLoading(true);
+
+        fetch ('http://localhost:8000/blogs', {
+            method: 'POST',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(blog)
+        })
+        .then(() => {
+            console.log('new blog added')
+            setIsLoading(false)
+            history.push('/')
+        })
     }
 
-
+    
 
 
     return(
@@ -38,10 +56,8 @@ const Create = () => {
                     <option value="emma">emma</option>
                     onChange={(e) => setAuthor(e.target.value)}
                 </select>
-                <button>Add Blog</button>
-                <p>{ title }</p>
-                <p>{ body }</p>
-                <p>{ author }</p>
+                {!isLoading && <button>Add Blog</button>}
+                {isLoading && <button disabled>Adding Blog...</button>}
             </form>
         </div>
     )

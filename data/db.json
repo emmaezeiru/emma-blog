@@ -1,16 +1,40 @@
 {
-    "blogs": [
-        {
-            "title": "My first Blog",
-            "body": "why do we use it ?\nIt is a long establshed fact that a user will be distracted",
-            "author": "saint",
-            "id": 1
-        },
-        {
-            "title": "Opening party",
-            "body": "why do we use it ?\nIt is a long establshed fact that a user will be distracted",
-            "author": "emma",
-            "id": 2
-        }
-    ]
+  "blogs": [
+    {
+      "title": "My first Blog",
+      "body": "why do we use it ?\nIt is a long establshed fact that a user will be distracted",
+      "author": "saint",
+      "id": "1"
+    },
+    {
+      "title": "Opening party",
+      "body": "why do we use it ?\nIt is a long establshed fact that a user will be distracted",
+      "author": "emma",
+      "id": "2"
+    },
+    {
+      "id": "c1da",
+      "title": "dd2dee",
+      "body": "dwwd",
+      "author": "emma"
+    },
+    {
+      "id": "ebf4",
+      "title": "dd2dee",
+      "body": "dwwd",
+      "author": "emma"
+    },
+    {
+      "id": "6467",
+      "title": "this blog",
+      "body": "whatever",
+      "author": "emma"
+    },
+    {
+      "id": "18b8",
+      "title": "how to get away with murder",
+      "body": "why did you click",
+      "author": "saint"
+    }
+  ]
 }
