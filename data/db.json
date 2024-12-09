@@ -1,34 +1,34 @@
 {
   "blogs": [
     {
-      "title": "My first Blog",
-      "body": "why do we use it ?\nIt is a long establshed fact that a user will be distracted",
+      "id": "6e77",
+      "title": "Building Secure Backends",
+      "body": "Security is critical in backend development. Understand techniques such as input validation, authentication, and encryption to protect your systems.",
+      "author": "emma"
+    },
+    {
+      "title": "Breaking Down REST APIs",
+      "body": "REST APIs are the backbone of modern web development. Learn how they work, best practices for designing them, and how to secure your endpoints.",
       "author": "saint",
       "id": "1"
     },
     {
-      "title": "Opening party",
-      "body": "why do we use it ?\nIt is a long establshed fact that a user will be distracted",
+      "title": "The Power of Docker in DevOps",
+      "body": "Docker has revolutionized DevOps by simplifying containerization. Discover how to use Docker for creating, deploying, and managing scalable applications.",
       "author": "emma",
       "id": "2"
     },
     {
       "id": "18b8",
-      "title": "how to get away with murder",
-      "body": "why did you click",
+      "title": "Understanding Microservices Architecture",
+      "body": "Microservices allow for building scalable and flexible applications. Explore their benefits, challenges, and tools like Kubernetes for orchestration.",
       "author": "saint"
     },
     {
       "id": "4c64",
-      "title": "a good day",
-      "body": "i am fine, strong\ni can do whatever i wanr\ni can be whatever i want",
+      "title": "Continuous Integration and Delivery Explained",
+      "body": "CI/CD pipelines automate deployment, reduce errors, and speed up development. Learn the tools and workflows essential for effective CI/CD.",
       "author": "saint"
-    },
-    {
-      "id": "6e77",
-      "title": "helle",
-      "body": "hello world",
-      "author": "emma"
     }
   ]
 }
